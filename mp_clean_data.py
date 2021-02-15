@@ -53,7 +53,9 @@ def cleanData():
     data['last_review'] = data['last_review'].apply(num_days)
     data = data.drop('host_name', axis = 1)
     data = data.drop('name', axis = 1)
-    return data
+    map_neigh_groups = {v: k for k , v in neigh_groups_dict.items()}
+    map_neigh = {v: k for k , v in neigh_dict.items()}
+    return data, map_neigh_groups, map_neigh
 
 
 
