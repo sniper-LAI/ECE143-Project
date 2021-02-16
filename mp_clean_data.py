@@ -25,12 +25,13 @@ positive_adj = ['cozy', 'spacious', 'park', 'garden', 'comfort', 'comfy', 'nice'
                 'best', 'affordable', 'breathtaking', 'radiant', 'holiday', 'cultured', 'premier', 'marvelous',
                 'trendiest', 'sunny', 'picturesque', 'glamorous', 'secure']
 shared_in_name = ['share', 'sharing']
-def cleanData():
+def cleanData(csv_file):
     """
-    Read dataset and return a cleaned dataset
-    :return:
+    Read dataset and return (cleaned dataset, mapping_neighbourhood_groups, mapping_neighbourhood)
+    csv_file: path to csv file (dataset)
+    :return: tuple
     """
-    data = pd.read_csv('/Users/krishvadodaria/Downloads/archive/AB_NYC_2019.csv')
+    data = pd.read_csv(csv_file)
     data['last_review'] = data['last_review'].fillna('1-1-1')
     data['reviews_per_month'] = data['reviews_per_month'].fillna(0.0)
     data['name'] = data['name'].fillna('Unnamed')
