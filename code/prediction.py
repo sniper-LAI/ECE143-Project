@@ -189,12 +189,6 @@ if __name__ == '__main__':
     print("Elastic Regression Test r2 score:", sklearn.metrics.r2_score(y_test,y_pred))
     # -------------------------------------- #
     
-    # ----------XgBoost Regression---------- #
-    xgboost = xgboost(x_train,y_train)
-    y_pred = xgboost.predict(x_test)
-    print("xgBoost Test r2 score:", sklearn.metrics.r2_score(y_test,y_pred))
-    # -------------------------------------- #
-    
     
     
     
