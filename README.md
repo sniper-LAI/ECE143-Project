@@ -31,7 +31,7 @@ All packages are listed in `requirements.txt`.
     ```
 
 ## Getting Started
-* [demo.ipynb](demo.ipynb) It shows all the visualizations generated for our presentation.
+* [demo_1.ipynb](demo_1.ipynb) It shows all the visualizations generated for our presentation.
 * [visualization.py](code/visualization.py) It contains functions for data visualization. To generate data visualization
 plots, please run
     ```bash
