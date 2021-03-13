@@ -11,7 +11,7 @@ New York City Airbnb Open Data: https://www.kaggle.com/dgomonov/new-york-city-ai
  │   ├── ... 
  ├── code                    # Source files
  │   ├── visualization.py    # Function for dataset visualization
- │   ├── ...                 # Add here if you need
+ │   ├── prediction.py       # Code for Prediction
  ├── save                    # Save visualization plot
  ├── demo.ipynb              # All the visualizations generated for presentation
  ├── requirement.txt         # Packages requirement
@@ -37,4 +37,10 @@ plots, please run
     ```bash
     cd code
     python visualization.py 
+    ```
+* [prediction.py](code/prediction.py) It contains functions for data prediction. To generate predictions,
+please run
+    ```bash
+    cd code
+    python prediction.py 
     ```
