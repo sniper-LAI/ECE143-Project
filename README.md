@@ -14,6 +14,7 @@ New York City Airbnb Open Data: https://www.kaggle.com/dgomonov/new-york-city-ai
  │   ├── prediction.py       # Code for Prediction
  ├── save                    # Save visualization plot
  ├── demo.ipynb              # All the visualizations generated for presentation
+ ├── price_prediction.ipynb  # This curates all the results of our prediction and analysis.
  ├── requirement.txt         # Packages requirement
  ├── .gitignore
  └── README.md
